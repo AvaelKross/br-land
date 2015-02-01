@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'KievitPro';
+  src: url('fonts/kievitpro-regular-webfont.eot');
+  src: url('fonts/kievitpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/kievitpro-regular-webfont.svg') format('svg'),
+       url('fonts/kievitpro-regular-webfont.woff') format('woff'),
+       url('fonts/kievitpro-regular-webfont.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KievitPro';
+  src: url('fonts/kievitpro-medium-webfont.eot');
+  src: url('fonts/kievitpro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/kievitpro-medium-webfont.svg') format('svg'),
+       url('fonts/kievitpro-medium-webfont.woff') format('woff'),
+       url('fonts/kievitpro-medium-webfont.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KievitPro';
+  src: url('fonts/KievitPro-Bold_gdi.eot');
+  src: url('fonts/KievitPro-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+       url('fonts/KievitPro-Bold_gdi.svg') format('svg'),
+       url('fonts/KievitPro-Bold_gdi.woff') format('woff'),
+       url('fonts/KievitPro-Bold_gdi.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
