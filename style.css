@@ -632,6 +632,7 @@ input[type='button'] {
 
 .popup{
   z-index:99999;
+  display: none;
   position:fixed;
   top:0px;
   left:0px;
@@ -667,9 +668,19 @@ input[type='button'] {
   height:100%;
 }
 
-.lead-popup {
-  width: 230px;
+.video-popup {
+  width: 900px;
   padding: 30px;
   padding-top: 20px;
+}
+
+.video-popup .main-subtitle1 {
+  font-size: 25px;
+}
+
+.video-popup .main-title {
+  font-size: 41px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
