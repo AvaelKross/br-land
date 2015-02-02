@@ -411,7 +411,8 @@ input[type='button'] {
 
 #program {
   background: url(images/program-bg.jpg) no-repeat;
-  height: 780px;
+  height: 900px;
+  background-color: black;
 }
 
 #program .title {
