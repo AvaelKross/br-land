@@ -192,6 +192,11 @@ input[type='button'] {
   float: left;
 }
 
+.cont a{
+  text-decoration: none;
+  color: black;
+}
+
 .address .contact-icon {
   background-position: -29px 10px;
 }
