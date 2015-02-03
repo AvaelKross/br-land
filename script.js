@@ -35,8 +35,15 @@ $(document).ready(function() {
   });
   
   $(".play-button").on('click', function(){
-    $("#video-popup").css("display", "block"); 
+    $("#video-popup").css("display", "block");
   });
+
+  $("#video-popup .closer").on('click', function(){
+    var $frame = $('#video-popup iframe');
+    var vidsrc = $frame.attr('src');
+    $frame.attr('src',''); 
+    $frame.attr('src', vidsrc);
+  })
   
   var phonemask = "+7 (999) 999-99-99"
   $("#phone").mask(phonemask);
@@ -49,16 +56,31 @@ $(document).ready(function() {
     if ($(email).val().length==0) { alert("Пожалуйста, введите свой адрес электронной почты"); return;}
     if (!validateEmail($(email).val())) { alert("Пожалуйста, введите корректный адрес электронной почты"); return;}
     
+    var data = { 
+      name: $(name).val(), 
+      email: $(email).val(), 
+      phone: $(phone).val(), 
+      form: form
+    }
+    data['utm_content'] = params['utm_content'];
+    data['utm_campaign'] = params['utm_campaign'];
+    data['utm_source'] = params['utm_source'];
+    data['utm_term'] = params['utm_term'];
+    data['utm_medium'] = params['utm_medium'];
+
     $.ajax({
       type: "POST",
       dataType: 'json',
       url: "ajax-proxy",
-      data: { name: $(name).val(), email: $(email).val(), phone: $(phone).val(), form: form, key: decodeURIComponent(key) }
+      data: data
     })
       .done(function( msg ) {
       console.log(msg);
       });
-    $("#popup1").css("display", "none");
-    $("#popup2").css("display", "block"); 
+    $("#thanks").css("display", "block"); 
   }
+
+  $("#submit_button2").on('click', function(){send_data('#name2', '#email2', '#phone2', "заявка на участие 2")});
+  $("#submit_button1").on('click', function(){send_data('#name1', '#email1', '#phone1', "заявка на участие 1")});
+  $("#manager-button").on('click', function(){send_data('#name', '#email', '#phone', "консультация менеджера")});
 });

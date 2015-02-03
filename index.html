@@ -11,6 +11,7 @@
   <script src="lib/jquery-1.10.2.min.js"></script>
   <script src="lib/jquery.maskedinput.min.js"></script>
   <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
   <script src="script.js"></script>
 </head>
 <body>
@@ -87,7 +88,7 @@
         <input name="name1" id="name1" placeholder="Ваше имя"/>
         <input name="phone1" id="phone1" placeholder="Ваш телефон"/>
         <input name="email1" id="email1" placeholder="Ваш E-mail"/>
-        <input type="submit" class="button button-orange" value='ОТПРАВИТЬ'/>
+        <input type="submit" class="button button-orange" id="submit_button1" value='ОТПРАВИТЬ'/>
       </div>
       <div class="clear" style="clear: both;"></div>
     </div>
@@ -196,10 +197,10 @@
       <div class="lead-big-title">Стоимость участия 10 000 руб.</div>
       <div class="lead-title">Оставте заявку на участие в тренинге</div>
       <div class='form'>
-        <input name="name1" id="name1" placeholder="Ваше имя"/>
-        <input name="phone1" id="phone1" placeholder="Ваш телефон"/>
-        <input name="email1" id="email1" placeholder="Ваш E-mail"/>
-        <input type="submit" class="button button-orange" value='ОТПРАВИТЬ'/>
+        <input name="name1" id="name2" placeholder="Ваше имя"/>
+        <input name="phone1" id="phone2" placeholder="Ваш телефон"/>
+        <input name="email1" id="email2" placeholder="Ваш E-mail"/>
+        <input type="submit" class="button button-orange" id="submit_button2" value='ОТПРАВИТЬ'/>
       </div>
       <div class="clear" style="clear: both;"></div>
     </div>
@@ -335,10 +336,10 @@
       <div class="form">
         <div class="form-title">Остались вопросы?</div>
         <div class="form-subtitle">Оставте заявку<br>на консультацию менеджера</div>
-        <input type="text" class="form-input form-name" id="main-name" placeholder="Ваше имя" ng-model="names['main']"></input>
-        <input type="text" input-mask class="form-input form-phone" id="main-phone" placeholder="Ваш телефон" ng-model="phones['main']"></input>
-        <input type="text" class="form-input form-mail" id="main-mail" placeholder="Ваш e-mail" ng-model="emails['main']"></input>
-        <input type="submit" class="button button-orange" value='ОТПРАВИТЬ'/>
+        <input type="text" class="form-input form-name" id="name" placeholder="Ваше имя"></input>
+        <input type="text" input-mask class="form-input form-phone" id="phone" placeholder="Ваш телефон"></input>
+        <input type="text" class="form-input form-mail" id="email" placeholder="Ваш e-mail"></input>
+        <input type="submit" class="button button-orange" id="manager-button" value='ОТПРАВИТЬ'/>
       </div>
     </div>
   </div>
@@ -378,7 +379,7 @@
       <div class="main-title">
         <span class="green">«</span> Богатый продавец - счастливый покупатель <span class="green">»</span>
       </div>
-      <iframe src="http://player.vimeo.com/video/101615498?color=b4d700&title=0&byline=0&portrait=0" width="900" height="507" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <iframe src="http://player.vimeo.com/video/118600750?color=b4d700&title=0&byline=0&portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
     <div class="closer" ng-click="closeAllPopups()">
     </div>
@@ -402,6 +403,13 @@
       ОГРН: 1116674013774<br>
       БИК: 046577674<br>
       ИНН: 6674381836<br>
+    </div>
+    <div class="closer"></div>
+  </div>
+
+  <div class="popup" id="thanks">
+    <div class="block video-popup" style="padding-top: 30px">
+      Спасибо! Ожидайте звонка.
     </div>
     <div class="closer">
     </div>
