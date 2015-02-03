@@ -28,6 +28,11 @@ $(document).ready(function() {
   $(".closer").on('click', function(){
     $(".popup").css("display", "none");
   });
+
+  $("#openPolitics").on('click', function(e){
+    $("#showPolitics").css("display", "block");
+    e.preventDefault();
+  });
   
   $(".play-button").on('click', function(){
     $("#video-popup").css("display", "block"); 
