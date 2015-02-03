@@ -5,6 +5,7 @@ head,body{
   width:100%;
   font-family: 'KievitPro';
   font-weight: 400;
+  -webkit-text-size-adjust: none
 }
 
 ul {
@@ -411,7 +412,7 @@ input[type='button'] {
 
 #program {
   background: url(images/program-bg.jpg) no-repeat;
-  height: 900px;
+  padding-bottom: 20px;
   background-color: black;
 }
 
@@ -543,12 +544,12 @@ input[type='button'] {
 
 #about {
   background: url(images/about-bg.jpg);
-  height: 662px;
   border-bottom: 10px solid #c1d72f;
+  padding-bottom: 40px;
 }
 
 .about-block {
-  float: left;
+  float: right;
   width: 570px;
   margin-left: -50px;
 }
