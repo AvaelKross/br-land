@@ -29,7 +29,7 @@ $(document).ready(function() {
     $(".popup").css("display", "none");
   });
 
-  $("#openPolitics").on('click', function(e){
+  $(".openPolitics").on('click', function(e){
     $("#showPolitics").css("display", "block");
     e.preventDefault();
   });

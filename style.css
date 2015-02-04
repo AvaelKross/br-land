@@ -135,6 +135,14 @@ input[type='button'] {
   padding-bottom: 20px;
 }
 
+.form a {
+  font-size: 12px;
+  color: white;
+  float:left;
+  margin-left: 10px;
+  padding-top: 5px;
+}
+
 .title {
   font-size: 30px;
   width: 100%;
@@ -620,6 +628,13 @@ input[type='button'] {
   background-color: #b4d700;
   box-shadow:0px 0px 10px rgba(0,0,0,0.35);
   height: 280px;
+}
+
+#map .form a{
+  margin-left: 0px;
+  float: left;
+  text-align: center;
+  width: 100%;
 }
 
 #map input {
