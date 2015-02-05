@@ -25,6 +25,9 @@ var group = params['group']
 var mail = params['mail']
 
 $(document).ready(function() {
+
+  var videoLink = "http://player.vimeo.com/video/118600750?autoplay=1&color=b4d700&title=0&byline=0&portrait=0";
+
   $(".closer").on('click', function(){
     $(".popup").css("display", "none");
   });
@@ -35,14 +38,12 @@ $(document).ready(function() {
   });
   
   $(".play-button").on('click', function(){
+    $('#video-popup iframe').attr('src', videoLink)
     $("#video-popup").css("display", "block");
   });
 
   $("#video-popup .closer").on('click', function(){
-    var $frame = $('#video-popup iframe');
-    var vidsrc = $frame.attr('src');
-    $frame.attr('src',''); 
-    $frame.attr('src', vidsrc);
+    $('#video-popup iframe').attr('src',''); 
   })
   
   var phonemask = "+7 (999) 999-99-99"
@@ -80,7 +81,7 @@ $(document).ready(function() {
     $("#thanks").css("display", "block"); 
   }
 
-  $("#submit_button2").on('click', function(){send_data('#name2', '#email2', '#phone2', "заявка на участие 2")});
-  $("#submit_button1").on('click', function(){send_data('#name1', '#email1', '#phone1', "заявка на участие 1")});
+  $("#submit_button2").on('click', function(){send_data('#name2', '#email2', '#phone2', "Запрос подробностей")});
+  $("#submit_button1").on('click', function(){send_data('#name1', '#email1', '#phone1', "Запрос подробностей")});
   $("#manager-button").on('click', function(){send_data('#name', '#email', '#phone', "консультация менеджера")});
 });

@@ -104,7 +104,7 @@ input[type='button'] {
   background-color: #fd4800;
   border-bottom: 1px solid #c24210;
   height: 38px;
-  margin-top:13px;
+  margin-top:3px;
 }
 
 .left {
@@ -140,7 +140,7 @@ input[type='button'] {
   color: white;
   float:left;
   margin-left: 10px;
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 .title {
@@ -370,18 +370,18 @@ input[type='button'] {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 34px;
-  color: black;
+  color: white;
 }
 
 .lead-block .wrapper {
-  padding: 25px 0px;
+  padding: 8px 0px;
   text-transform: uppercase;
 }
 
 .lead-block input {
   float: left;
   width: 220px;
-  margin: 10px 10px;
+  margin: 0px 10px;
   margin-bottom: 0px;
 }
 
