@@ -1,11 +1,20 @@
 var myMap;
 ymaps.ready(function () {
     myMap = new ymaps.Map("ymap", {
-        center: [56.829768, 60.615800],
+        center: [56.829006, 60.617000],
         zoom: 15,
         controls: ["zoomControl"]
-    });
+    })
+    myPlacemark = new ymaps.Placemark([56.829768, 60.615800], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: 'images/map-marker.png',
+          iconImageOffset: [-245, -100],
+          iconImageSize: [251, 107]
+      }
+    );
+    myMap.geoObjects.add(myPlacemark);
     myMap.behaviors.disable('scrollZoom');
+
 });
 
 
