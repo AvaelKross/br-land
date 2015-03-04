@@ -306,9 +306,7 @@ input[type='button'] {
 }
 
 #main {
-  height: 744px;
-  background: url('images/bg.jpg') no-repeat;
-  background-color: #eeebe4;
+  background-color: white;
   background-position: center;
 }
 

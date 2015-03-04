@@ -37,6 +37,13 @@ $(document).ready(function() {
 
   var videoLink = "http://player.vimeo.com/video/118600750?autoplay=1&color=b4d700&title=0&byline=0&portrait=0";
 
+  $('.video .play').click(function(){
+    var embed = $(this).parent().find('.embed');
+    $(this).fadeOut('fast');
+    embed.html($(this).data('embed')).show();
+    return false;
+  })
+
   $(".closer").on('click', function(){
     $(".popup").css("display", "none");
   });
@@ -59,12 +66,13 @@ $(document).ready(function() {
   $("#phone").mask(phonemask);
   $("#phone1").mask(phonemask);
   $("#phone2").mask(phonemask);
+  $("#phone3").mask(phonemask);
   
   function send_data(name, email, phone, form){
     if ($(name).val().length==0) { alert("Пожалуйста, введите своё имя"); return;}
     if ($(phone).val().length==0) { alert("Пожалуйста, введите свой номер телефона"); return;}
-    if ($(email).val().length==0) { alert("Пожалуйста, введите свой адрес электронной почты"); return;}
-    if (!validateEmail($(email).val())) { alert("Пожалуйста, введите корректный адрес электронной почты"); return;}
+    if ($(email).length>0 && $(email).val().length==0) { alert("Пожалуйста, введите свой адрес электронной почты"); return;}
+    if ($(email).length>0 && !validateEmail($(email).val())) { alert("Пожалуйста, введите корректный адрес электронной почты"); return;}
     
     var data = { 
       name: $(name).val(), 
@@ -92,5 +100,6 @@ $(document).ready(function() {
 
   $("#submit_button2").on('click', function(){send_data('#name2', '#email2', '#phone2', "Запрос подробностей")});
   $("#submit_button1").on('click', function(){send_data('#name1', '#email1', '#phone1', "Запрос подробностей")});
+  $("#submit_button3").on('click', function(e){e.preventDefault(); send_data('#name3', '#email3', '#phone3', "Запрос подробностей")});
   $("#manager-button").on('click', function(){send_data('#name', '#email', '#phone', "консультация менеджера")});
 });
