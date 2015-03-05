@@ -383,6 +383,16 @@ input[type='button'] {
   margin-bottom: 0px;
 }
 
+#leadblock1 .title {
+  color: white;
+  margin-top:9px;
+  font-size: 28px
+}
+
+#leadblock1 {
+  height: 60px;
+}
+
 #for-people .title {
   margin-top: 40px;
 }
@@ -431,6 +441,10 @@ input[type='button'] {
   color: white;
   padding-top:40px;
   margin-bottom: 35px;
+}
+
+.program-text {
+  color: white;
 }
 
 #program .column {
@@ -557,6 +571,10 @@ input[type='button'] {
   background: url(images/about-bg.jpg);
   border-bottom: 10px solid #c1d72f;
   padding-bottom: 40px;
+}
+
+#about .title {
+  padding-top: 30px;
 }
 
 .about-block {
