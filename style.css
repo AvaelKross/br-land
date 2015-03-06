@@ -152,6 +152,21 @@ input[type='button'] {
   font-weight: 700;
 }
 
+.social, .social:visited {
+  height: 36px;
+  width: 36px;
+  background: url(images/socials.png) no-repeat;
+  float: left;
+  display: block;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.social:active, .social:hover {
+  background-position-y: -36px !important;
+  cursor: pointer;
+}
+
 /* FOR SPECIFIC BLOCKS */
 
 #header {
@@ -185,7 +200,7 @@ input[type='button'] {
 .contact {
   float: left;
   height: 44px;
-  margin-top:50px;
+  margin-top: -2px;
 }
 
 .contact.phone {
@@ -350,6 +365,12 @@ input[type='button'] {
   background-position: -120px 0px;
 }
 
+#site-main {
+  background: url(images/new-bg.jpg) no-repeat;
+  height:430px;
+  background-position: center 107px;
+}
+
 .lead-block {
   background-color: #b4d700;
   height:121px;
@@ -386,7 +407,7 @@ input[type='button'] {
 #leadblock1 .title {
   color: white;
   margin-top:9px;
-  font-size: 28px
+  font-size: 26px
 }
 
 #leadblock1 {
@@ -435,6 +456,7 @@ input[type='button'] {
   background: url(images/program-bg.jpg) no-repeat;
   padding-bottom: 20px;
   background-color: black;
+  background-position: center;
 }
 
 #program .title {
@@ -578,9 +600,8 @@ input[type='button'] {
 }
 
 .about-block {
-  float: right;
   width: 570px;
-  margin-left: -50px;
+  margin-left: 390px;
 }
 
 .about-title {
@@ -592,6 +613,7 @@ input[type='button'] {
 
 #about .green {
   font-size: 26px;
+  margin-top: 40px;
 }
 
 #about .gray {
@@ -602,6 +624,16 @@ input[type='button'] {
   margin-top: 32px;
   font-size: 17px;
   line-height: 22px;
+}
+
+.about-line {
+  height: 3;
+  width:100%;
+  background-color: #b4d700;
+}
+
+.coach {
+  
 }
 
 #partners {
@@ -669,6 +701,10 @@ input[type='button'] {
   min-height: 110px;
   padding-top: 0px;
   margin-top:-30px;
+}
+
+#footer .logo{
+  width: 209px;
 }
 
 /* POPUPS */
