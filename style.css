@@ -531,7 +531,7 @@ input[type='button'] {
 }
 
 .review-photo {
-  width: 220px;
+  width: 210px;
   padding: 0px 10px;
   float: left;
 }
@@ -539,7 +539,7 @@ input[type='button'] {
 .review .name {
   font-weight: 700;
   margin: 5px 0px;
-  margin-top: 0px;
+  margin-top: 5px;
 }
 
 .review .gray {
@@ -549,9 +549,12 @@ input[type='button'] {
 }
 
 .review-photo .review-face {
-  height: 220px;
-  width: 220px;
+  height: 210px;
+  width: 209px;
   background: url("images/faces-2.jpg") no-repeat;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .review-photo .comment {
@@ -569,7 +572,7 @@ input[type='button'] {
 }
 
 .review-text {
-  width: 664px;
+  width: 674px;
   float: left;
   padding: 15px;
   margin-bottom:20px;
