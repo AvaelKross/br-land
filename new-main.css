@@ -223,6 +223,38 @@ main hgroup h2 {
     line-height: 14px;
 }
 
+
+#section-testimonials blockquote {
+    font-size: 20px;
+    font-style: italic;
+    border: 0px;
+    padding: 0px;
+    margin:0px;
+    margin-top: 20px;
+}
+
+#section-testimonials blockquote:before,
+#section-testimonials blockquote:after {
+    color: #c2d43d;
+}
+
+#section-testimonials blockquote:before {
+    content: '«';
+}
+
+#section-testimonials blockquote:after {
+    content: '»';
+}
+
+.col-md-4 {
+  width: 290px;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .col-md-6 {
   width: 450px;
   float: left;
