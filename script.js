@@ -41,6 +41,7 @@ $(document).ready(function() {
     var embed = $(this).parent().find('.embed');
     $(this).fadeOut('fast');
     embed.html($(this).data('embed')).show();
+    yaCounter28864155.reachGoal('video');
     return false;
   })
 
